@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Set character encoding -->
+    <style>
+        /* Layout styles for horizontal alignment */
+        body {
+            width: 200px; /* Popup window width */
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Description text ("Ethereum:") */
+        .description {
+            font-size: 14px;
+            color: #666;
+            margin-right: 10px; /* Space to the right of the label */
+        }
+
+        /* Gwei value text */
+        #gweiValue {
+            font-size: 14px; /* Increase font size for better visibility */
+            font-weight: bold;
+            margin-right: 10px; /* Space between text and button */
+        }
+
+        /* Etherscan link button */
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px;
+            background-color: #ffffff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Optional: hover effect for the Etherscan button */
+        .link-button:hover {
+            background-color: #ffffff;
+        }
+
+        /* Etherscan icon inside the button */
+        .link-button img {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="description">Ethereum:</div>
+    <div id="gweiValue">Loading...</div>
+    <a href="https://etherscan.io/gastracker" target="_blank" class="link-button">
+        <img src="iconetherscan.png" alt="Etherscan" style="width: 16px; height: 16px; vertical-align: middle;">
+    </a>
+    <script src="popup.js"></script>
+</body>
+</html>

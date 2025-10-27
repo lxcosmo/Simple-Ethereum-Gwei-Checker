@@ -1,0 +1,10 @@
+/* Set the text size for the Gwei value */
+#gweiValue {
+    font-size: 16px; /* Set your desired font size for the Gwei number */
+}
+
+/* Set the text size for the description ("Current Gwei level") */
+.description {
+    font-size: 12px; /* Set your desired font size for the description */
+    color: #666; /* Optional: add a softer gray color for better readability */
+}
